@@ -14,6 +14,7 @@ app.set('port',process.env.PORT || 3000); //IDENTIFICA SI HAY PUERTO DISPONIBLE,
 app.set('view engine', 'ejs'); //INDICAMOS QUE MOTOR DE PLANTILLA UTILIZAREMOS
  app.set('views', path.join(__dirname,'views')); // ASIGNA LA RUTA PARA ACCEDES A LAS VISTAS POR MEDIO DE PATH
 
+
 //MIDDLEWARES
 app.use(morgan('dev')); // MOSTRARA LAS PETICIONES SOLICITADAS POR CONSOLA
 app.use(myConnection(mysql, { //CONEXION CON BASE DE DATOS
